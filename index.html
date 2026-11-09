@@ -229,16 +229,26 @@
 
             <section id="research">
                 <h2>Research</h2>
-                <p> My current research explores natural spaces of functions on quiver representations, 
-                    in particular the free algebroid of a quiver and its functional calculus. </p>
-        
-                <p> Given a polynomial with complex coefficients  $f(x) = \sum_i^na_ix^i$, 
-                    this can be evaluated on a square matrix $X$, simply by taking $f(X) = \sum_i^n a_iX^i$. 
-                    Similarly, by applying a continuous function $f$ to the diagonal entries of a diagonal matrix, you can define $f(A)$ for any diagonalizable matrix $A$ by </p>
-                <div class="math-block">
-                    $$f(A) = f(U^*\begin{pmatrix}a&\\&b\end{pmatrix}U) = U^*\begin{pmatrix} f(a) &\\&f(b) U \end{pmatrix}$$
-                </div>
-                <p> where $A = U^*DU$ is the spectral decomposition of $A$. </p>
+                <p> A continuous complex function $f$ can be applied entrywise to a diagonal matrix, 
+                    as in \\[f\begin{pmatrix}a & 0 \\ 0 &b\end{pmatrix} = \begin{pmatrix}f(a) & 0\\0 & f(b)\end{pmatrix} \hspace{5mm}.\\]  
+                    From this we extend $f$ to \textit{almost every} matrix by defining \\[f(U^*DU) = U^*f(D)U,\\] where $U$ is any unitary matrix, $U^*$ its inverse, and $D$ diagonal. </p>
+
+<p>We can extend this to any complex matrix $A$ when $f = \sum_{n}a_nx^n$ is a complex analytic function. 
+Given an $m\times m$ Jordan block $J$  we evaluate 
+                    \\[f(J) = f\begin{pmatrix}\lambda & 1&&\\&\ddots&\ddots&\\&&\lambda&1\\&&&\lambda\end{pmatrix}= \sum_na_nJ^n =\begin{pmatrix}f(\lambda) & f'(\lambda)&\hdots&\frac{f^{(m)}(\lambda)}{m!}\\&\ddots&\ddots&\vdots\\&&f(\lambda)&f'(\lambda)\\&&&f(\lambda)\end{pmatrix}.\\]</p>
+
+<p>Because every matrix is similar to a direct sum of Jordan blocks, which we notate $A = S^{-1}J^\oplus S$, we extend $f$ to any matrix by \\[f(A) = S^{-1}f(J^\oplus)S.\\]</p>
+
+<p>Both of these can be extended to functions of a single \textit{operator} variable, in the continuous case by polynomial approximation 
+                    and in the complex analytic case by adapting the Cauchy integral formula, giving for a bounded linear transformation $T$ the evaluation 
+\\[f(T) = \frac{1}{2\pi i} \int_\gamma f(\zeta)(\zeta - T)^{-1}d\zeta.\\] 
+                    All of this supposes that the spectrum of our matrices and operators are contained within the domain of $f.$ </p>
+
+<p>This approach to matrix and operator functional calculus can be extended to multivariate functions, but this requires the arguments of the function to commute. 
+                    Tuples of matrices typically do not commute; this is dealt with using the \textit{free functional calculus}. 
+                    The archetypal free function is a noncommutative polynomial, which is written as \\[f(x_1, \dots, x_d) = \sum_{i=0}^n c_iw_i(x_1, \dots, x_d)\\] where $w_i(x_1, \dots, x_d)$ is a word in the $d$ noncommuting letters. 
+                    These are naturally evaluated on a $d$-tuple of square matrices $(A_1, \dots, A_d)$ by replacing each $x_i$ with $A_i$. 
+                    These can then be extended to continuous and analytic functions in the typical way. The free functional calculus gives a rich theory, wherein notably the non-commutative Jacobian conjecture holds [Pas14, Aug19]. </p>
             </section>
 
             <section id="publications">
@@ -252,6 +262,17 @@
                         <span class = "pub-title"> Freedom is all you need </span>
                         <span class="pub-journal"> in preparation </span>
                     </li>
+                </ul>
+            </section>
+
+            <section id="references">
+                <h2> Interesting papers regarding the free functional calculus </h2>
+                
+                <ul>
+                    <li> [Aug19] Augat, Meric L. ``The free Grothendieck theorem." 
+                        \textit{Proceedings of the London Mathematical Society} 118, no. 4 (2019): 787-825. </li>
+                    <li> [Pas14] Pascoe, James E. ``The inverse function theorem and the Jacobian conjecture for free analysis." 
+                        \textit{Mathematische Zeitschrift} 278 (2014): 987-994. </li>
                 </ul>
             </section>
 
