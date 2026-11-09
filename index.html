@@ -3,15 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Jane Doe | Department of Mathematics</title>
+    <title>Julian Bushelli Mathematician</title>
     
     <!-- Light, asynchronous MathJax v3 bundle optimized for speed -->
-    <script>
+    
+        <script>
         window.MathJax = {
-            tex: { inlineMath: [['\\(', '\\)']], displayMath: [['$$', '$$']] },
-            svg: { fontCache: 'global' }
+            tex: {
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                processEscapes: true
+            },
+            options: {
+                ignoreHtmlClass: 'tex2jax_ignore',
+                processHtmlClass: 'tex2jax_process'
+            }
         };
     </script>
+    
+    <!-- 2. Secure MathJax v3 Engine Delivery via jsdelivr -->
     <script id="MathJax-script" async src="https://jsdelivr.net"></script>
     
     <style>
@@ -196,8 +206,8 @@
     <div class="container">
 
         <header>
-            <h1>Dr. Jane Doe</h1>
-            <div class="title-sub">Associate Professor of Mathematics — University of Science</div>
+            <h1>Julian Bushelli</h1>
+            <div class="title-sub">PhD Candidate, Drexel University</div>
             <nav>
                 <a href="#about">About</a>
                 <a href="#research">Research</a>
@@ -212,15 +222,12 @@
                 <h2>About Me</h2>
                 <div class="profile-grid">
                     <div>
-                        <p>Welcome to my academic homepage. I am an Associate Professor in the Department of Mathematics at the University of Science. My primary academic work focuses on geometric topology, differential geometry, and mathematical physics.</p>
+                        <p>Welcome to my academic homepage. I am a doctoral candidate in the Department of Mathematics at Drexel University. My primary academic work focuses on operator theory, particularly the free functional calculus.</p>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
                     </div>
                     <div class="contact-info">
                         <p><strong>Contact Info:</strong></p>
-                        <p>Office: 402 Math Hall</p>
-                        <p>University of Science</p>
-                        <p>123 College Avenue</p>
-                        <p>Email: j.doe@uscidence.edu</p>
+                        <p>Email: jb4549@drexel.edu</p>
                         <p>Phone: (555) 019-2831</p>
                     </div>
                 </div>
@@ -228,7 +235,7 @@
 
             <section id="research">
                 <h2>Research</h2>
-                <p>My current research initiatives explore the intersections of invariants in low-dimensional topology and quantitative geometric features. Specifically, I investigate the asymptotic behavior of spectral properties corresponding to families of smooth Riemannian manifolds \(M\) under prescribed structural constraints.</p>
+                <p>My current research explores natural spaces of functions on quiver representations, in particular the free algebroid of a quiver and its functional calculus. </p>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet iaculis ultrices. Proin quis imperdiet interdum, ligula ante convallis eros, eget feugiat purus lectus vel lectus. A sample manifestation of our core structural identity evaluates as follows:</p>
                 
