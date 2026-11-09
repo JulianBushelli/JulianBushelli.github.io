@@ -10,8 +10,8 @@
         <script>
         window.MathJax = {
             tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']],
+                inlineMath: [[$, $], [\(, \)]],
+                displayMath: [[$$, $$], [\[, \]]],
                 processEscapes: true
             },
             options: {
@@ -223,8 +223,7 @@
                 <div class="profile-grid">
                     <div>
                         <p>Welcome to my academic homepage. I am a doctoral candidate in the Department of Mathematics at Drexel University. My primary academic work focuses on operator theory, particularly the free functional calculus.</p>
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                    </div>
+                        </div>
                     <div class="contact-info">
                         <p><strong>Contact Info:</strong></p>
                         <p>Email: jb4549@drexel.edu</p>
@@ -235,61 +234,40 @@
 
             <section id="research">
                 <h2>Research</h2>
-                <p>My current research explores natural spaces of functions on quiver representations, in particular the free algebroid of a quiver and its functional calculus. </p>
-                
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet iaculis ultrices. Proin quis imperdiet interdum, ligula ante convallis eros, eget feugiat purus lectus vel lectus. A sample manifestation of our core structural identity evaluates as follows:</p>
-                
+                <p> My current research explores natural spaces of functions on quiver representations, 
+                    in particular the free algebroid of a quiver and its functional calculus. </p>
+        
+                <p> Given a polynomial with complex coefficients <div class="math-block"> $f(x) = \sum_i^na_ix^i$ <\div>, 
+                    this can be evaluated on a square matrix $X$, simply by taking $f(X) = \sum_i^n a_iX^i$. 
+                    Similarly, by applying a continuous function $f$ to the diagonal entries of a diagonal matrix, you can define $f(A)$ for any diagonalizable matrix $A$ by 
                 <div class="math-block">
-                    $$\int_{\partial \Omega} \omega = \int_{\Omega} d\omega$$
+                    $$f(A) = f(U^*\begin{pmatrix}a&\\&b\end{pmatrix}U) = U^*\begin{pmatrix} f(a) &\\&f(b) U$$
                 </div>
-
-                <p>Additionally, we study the convergence of sequence variants mapping functional properties across non-linear spaces where the localized metric satisfies:</p>
-                
-                <div class="math-block">
-                    $$\operatorname{Ric}(X, X) \ge (n-1)K\|X\|^2$$
-                </div>
+                    where $A = U^*DU$ is the spectral decomposition of $A$. 
             </section>
 
             <section id="publications">
-                <h2>Selected Publications</h2>
+                <h2>Publications</h2>
                 <ul>
                     <li>
-                        <span class="pub-title">On the convergence of geometric flow structures in closed spaces</span>, 
-                        <span class="pub-journal">Journal of Differential Geometry</span>, Vol. 42, No. 3 (2025), 145–189.
-                    </li>
-                    <li>
-                        <span class="pub-title">Topological invariants and quantum properties of localized manifolds</span> (with A. Smith), 
-                        <span class="pub-journal">Mathematische Annalen</span>, Vol. 310, No. 2 (2023), 411–435.
-                    </li>
-                    <li>
-                        <span class="pub-title">Asymptotic behavior of eigenvalue spaces on non-compact domains</span>, 
-                        <span class="pub-journal">Transactions of the American Mathematical Society</span>, Vol. 158, No. 1 (2021), 89–120.
+                        <span class="pub-title"> The Free Functional Calculus in General</span>, 
+                        <span class="pub-journal">JPreprint, </span>, (arXiv:2506.00170)
                     </li>
                 </ul>
-                <p>A comprehensive log of active preprints is accessible on my <a href="https://arxiv.org" class="external" target="_blank">arXiv author page</a>.</p>
             </section>
 
             <section id="teaching">
                 <h2>Teaching</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Core lecture curriculum and relevant archival materials for students are accessible via the respective framework modules below:</p>
+                <p> I have taught courses in pre-calculus and early calculus, as well as probability and statistics. 
+                    In addition, I have organized reading groups discussing algebraic geometry, von Neumann algebras, and category theory, 
+                    as well as shorter topics guided by participant interest.</p>
                 
-                <p><strong>Current Courses (Fall 2026):</strong></p>
-                <ul>
-                    <li><strong>MATH 401:</strong> Real Analysis I</li>
-                    <li><strong>MATH 720:</strong> Advanced Topics in Differential Geometry (Graduate Seminar)</li>
-                </ul>
-
-                <p><strong>Past Courses:</strong></p>
-                <ul>
-                    <li>MATH 215: Linear Algebra & Differential Equations</li>
-                    <li>MATH 302: Foundations of Complex Variables</li>
-                </ul>
             </section>
 
         </main>
 
         <footer>
-            <p>&copy; 2026 Dr. Jane Doe. Built using clean HTML and hosted via GitHub Pages.</p>
+            <p>&copy; 2026 Julian Bushelli. Built using clean HTML and hosted via GitHub Pages.</p>
         </footer>
 
     </div>
