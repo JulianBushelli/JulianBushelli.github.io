@@ -7,15 +7,15 @@
     
     <!-- Light, asynchronous MathJax v3 bundle optimized for speed -->
     
-        <script>
-        window.MathJax = {
-            tex: {
-                inlineMath: [['$', '$'], ['\\(', '\\)']],
-                displayMath: [['$$', '$$'], ['\\[', '\\]']]
-            }
-        };
-    </script>
-    <script src="https://jsdelivr.net" id="MathJax-script" async></script>
+    <script>
+    window.MathJax = {
+        tex: {
+            inlineMath: [['$', '$'], ['\\(', '\\)']],
+            displayMath: [['$$', '$$'], ['\\[', '\\]']]
+        }
+    };
+</script>
+<script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
     
     <style>
         :root {
@@ -234,11 +234,11 @@
         
                 <p> Given a polynomial with complex coefficients  $f(x) = \sum_i^na_ix^i$, 
                     this can be evaluated on a square matrix $X$, simply by taking $f(X) = \sum_i^n a_iX^i$. 
-                    Similarly, by applying a continuous function $f$ to the diagonal entries of a diagonal matrix, you can define $f(A)$ for any diagonalizable matrix $A$ by 
+                    Similarly, by applying a continuous function $f$ to the diagonal entries of a diagonal matrix, you can define $f(A)$ for any diagonalizable matrix $A$ by </p>
                 <div class="math-block">
-                    $$f(A) = f(U^*\begin{pmatrix}a&\\&b\end{pmatrix}U) = U^*\begin{pmatrix} f(a) &\\&f(b) U$$
+                    $$f(A) = f(U^*\begin{pmatrix}a&\\&b\end{pmatrix}U) = U^*\begin{pmatrix} f(a) &\\&f(b) U \end{pmatrix}$$
                 </div>
-                    where $A = U^*DU$ is the spectral decomposition of $A$. 
+                <p> where $A = U^*DU$ is the spectral decomposition of $A$. </p>
             </section>
 
             <section id="publications">
@@ -263,7 +263,7 @@
                 <p> In addition to the below courses, I have organized reading groups discussing algebraic geometry, 
                     von Neumann algebras, and category theory, 
                     as well as shorter topics guided by participant interest.</p>
-                <h2> Unique classes taught </h2>
+                <h3> Unique classes taught </h3>
                 <ul>
                     <li> Calculus I </li>
                     <li> Precalculus with financial mathematics </li>
@@ -271,7 +271,7 @@
                     <li> Fundamentals of mathematics </li>
                     <li> Probability and statistics for the liberal arts </li>
                 </ul>
-                <h2> Unique Class recitations run </h2>
+                <h3> Unique Class recitations run </h3>
                 <ul>
                     <li> Scientific Data Analysis I </li>
                     <li> Scientific Data Analysis II </li>
