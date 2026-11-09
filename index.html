@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julian Bushelli | Mathematics PhD candidate, Drexel University</title>
-    <!-- MathJax for rendering professional mathematical equations -->
-    <script src="https://polyfill.io"></script>
+    <title>Dr. Jane Doe | Department of Mathematics</title>
+    
+    <!-- Light, asynchronous MathJax v3 bundle optimized for speed -->
+    <script>
+        window.MathJax = {
+            tex: { inlineMath: [['\\(', '\\)']], displayMath: [['$$', '$$']] },
+            svg: { fontCache: 'global' }
+        };
+    </script>
     <script id="MathJax-script" async src="https://jsdelivr.net"></script>
+    
     <style>
         :root {
             --bg-color: #fcfcfc;
@@ -14,7 +21,7 @@
             --accent-color: #1a446c;
             --light-accent: #f0f4f8;
             --border-color: #dddddd;
-            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
             --math-font: "Times New Roman", Times, serif;
         }
 
@@ -189,8 +196,8 @@
     <div class="container">
 
         <header>
-            <h1>Julian Bushelli</h1>
-            <div class="title-sub">PhD Candidate in Mathematics — Drexel University</div>
+            <h1>Dr. Jane Doe</h1>
+            <div class="title-sub">Associate Professor of Mathematics — University of Science</div>
             <nav>
                 <a href="#about">About</a>
                 <a href="#research">Research</a>
@@ -201,7 +208,6 @@
 
         <main>
             
-            <!-- About Section -->
             <section id="about">
                 <h2>About Me</h2>
                 <div class="profile-grid">
@@ -214,16 +220,15 @@
                         <p>Office: 402 Math Hall</p>
                         <p>University of Science</p>
                         <p>123 College Avenue</p>
-                        <p>Email: julianbushelli@gmail.com</p>
+                        <p>Email: j.doe@uscidence.edu</p>
                         <p>Phone: (555) 019-2831</p>
                     </div>
                 </div>
             </section>
 
-            <!-- Research Section -->
             <section id="research">
                 <h2>Research</h2>
-                <p>My current research initiatives explore the intersections of invariants in low-dimensional topology and quantitative geometric features. Specifically, I investigate the asymptotic behavior of spectral properties corresponding to families of smooth Riemannian manifolds <span class="math-inline">\(M\)</span> under prescribed structural constraints.</p>
+                <p>My current research initiatives explore the intersections of invariants in low-dimensional topology and quantitative geometric features. Specifically, I investigate the asymptotic behavior of spectral properties corresponding to families of smooth Riemannian manifolds \(M\) under prescribed structural constraints.</p>
                 
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam aliquet iaculis ultrices. Proin quis imperdiet interdum, ligula ante convallis eros, eget feugiat purus lectus vel lectus. A sample manifestation of our core structural identity evaluates as follows:</p>
                 
@@ -238,7 +243,6 @@
                 </div>
             </section>
 
-            <!-- Publications Section -->
             <section id="publications">
                 <h2>Selected Publications</h2>
                 <ul>
@@ -258,7 +262,6 @@
                 <p>A comprehensive log of active preprints is accessible on my <a href="https://arxiv.org" class="external" target="_blank">arXiv author page</a>.</p>
             </section>
 
-            <!-- Teaching Section -->
             <section id="teaching">
                 <h2>Teaching</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Core lecture curriculum and relevant archival materials for students are accessible via the respective framework modules below:</p>
@@ -279,3 +282,10 @@
         </main>
 
         <footer>
+            <p>&copy; 2026 Dr. Jane Doe. Built using clean HTML and hosted via GitHub Pages.</p>
+        </footer>
+
+    </div>
+
+</body>
+</html>
