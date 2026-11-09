@@ -10,19 +10,12 @@
         <script>
         window.MathJax = {
             tex: {
-                inlineMath: [[$, $], [\(, \)]],
-                displayMath: [[$$, $$], [\[, \]]],
-                processEscapes: true
-            },
-            options: {
-                ignoreHtmlClass: 'tex2jax_ignore',
-                processHtmlClass: 'tex2jax_process'
+                inlineMath: [['$', '$'], ['\\(', '\\)']],
+                displayMath: [['$$', '$$'], ['\\[', '\\]']]
             }
         };
     </script>
-    
-    <!-- 2. Secure MathJax v3 Engine Delivery via jsdelivr -->
-    <script id="MathJax-script" async src="https://jsdelivr.net"></script>
+    <script src="https://jsdelivr.net" id="MathJax-script" async></script>
     
     <style>
         :root {
@@ -213,6 +206,7 @@
                 <a href="#research">Research</a>
                 <a href="#publications">Publications</a>
                 <a href="#teaching">Teaching</a>
+                <a href="#talks">Talks </a>
             </nav>
         </header>
 
@@ -222,7 +216,8 @@
                 <h2>About Me</h2>
                 <div class="profile-grid">
                     <div>
-                        <p>Welcome to my academic homepage. I am a doctoral candidate in the Department of Mathematics at Drexel University. My primary academic work focuses on operator theory, particularly the free functional calculus.</p>
+                        <p>I am a doctoral candidate in the Department of Mathematics at Drexel University advised by James E. Pascoe. My work focuses on operator theory, particularly the free functional calculus, 
+                            though my interests extend broadly across noncommutative algebra, noncommutative real algebraic geometry, as well as foundations of mathematics.</p>
                         </div>
                     <div class="contact-info">
                         <p><strong>Contact Info:</strong></p>
@@ -237,7 +232,7 @@
                 <p> My current research explores natural spaces of functions on quiver representations, 
                     in particular the free algebroid of a quiver and its functional calculus. </p>
         
-                <p> Given a polynomial with complex coefficients <div class="math-block"> $f(x) = \sum_i^na_ix^i$ <\div>, 
+                <p> Given a polynomial with complex coefficients  $f(x) = \sum_i^na_ix^i$, 
                     this can be evaluated on a square matrix $X$, simply by taking $f(X) = \sum_i^n a_iX^i$. 
                     Similarly, by applying a continuous function $f$ to the diagonal entries of a diagonal matrix, you can define $f(A)$ for any diagonalizable matrix $A$ by 
                 <div class="math-block">
@@ -251,16 +246,36 @@
                 <ul>
                     <li>
                         <span class="pub-title"> The Free Functional Calculus in General</span>, 
-                        <span class="pub-journal">JPreprint, </span>, (arXiv:2506.00170)
+                        <span class="pub-journal">Preprint, </span>, (arXiv:2506.00170)
+                    </li>
+                    <li>
+                        <span class = "pub-title"> Freedom is all you need </span>
+                        <span class="pub-journal"> in preparation </span>
                     </li>
                 </ul>
             </section>
 
+            <section id ="talks">
+            </section>
+
             <section id="teaching">
                 <h2>Teaching</h2>
-                <p> I have taught courses in pre-calculus and early calculus, as well as probability and statistics. 
-                    In addition, I have organized reading groups discussing algebraic geometry, von Neumann algebras, and category theory, 
+                <p> In addition to the below courses, I have organized reading groups discussing algebraic geometry, 
+                    von Neumann algebras, and category theory, 
                     as well as shorter topics guided by participant interest.</p>
+                <h2> Unique classes taught </h2>
+                <ul>
+                    <li> Calculus I </li>
+                    <li> Precalculus with financial mathematics </li>
+                    <li> Calculus for non-majors </li>
+                    <li> Fundamentals of mathematics </li>
+                    <li> Probability and statistics for the liberal arts </li>
+                </ul>
+                <h2> Unique Class recitations run </h2>
+                <ul>
+                    <li> Scientific Data Analysis I </li>
+                    <li> Scientific Data Analysis II </li>
+                </ul>
                 
             </section>
 
