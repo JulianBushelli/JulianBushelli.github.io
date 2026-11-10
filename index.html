@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Julian Bushelli Mathematician</title>
+    <title>Julian Bushelli Homepage</title>
     
     <!-- Light, asynchronous MathJax v3 bundle optimized for speed -->
     
@@ -18,180 +18,7 @@
 <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js" async></script>
     
     <style>
-        :root {
-            --bg-color: #fcfcfc;
-            --text-color: #222222;
-            --accent-color: #1a446c;
-            --light-accent: #f0f4f8;
-            --border-color: #dddddd;
-            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
-            --math-font: "Times New Roman", Times, serif;
-        }
-
-        * {
-            box-sizing: border-box;
-            margin: 0;
-            padding: 0;
-        }
-
-        body {
-            font-family: var(--font-family);
-            color: var(--text-color);
-            background-color: var(--bg-color);
-            line-height: 1.7;
-            padding: 2rem 1rem;
-        }
-
-        .container {
-            max-width: 800px;
-            margin: 0 auto;
-        }
-
-        header {
-            margin-bottom: 3rem;
-            border-bottom: 2px solid var(--accent-color);
-            padding-bottom: 1.5rem;
-        }
-
-        h1 {
-            font-size: 2.2rem;
-            font-weight: 500;
-            color: var(--accent-color);
-            margin-bottom: 0.5rem;
-        }
-
-        .title-sub {
-            font-size: 1.1rem;
-            color: #555555;
-            font-style: italic;
-        }
-
-        nav {
-            margin-top: 1.5rem;
-        }
-
-        nav a {
-            color: var(--text-color);
-            text-decoration: none;
-            margin-right: 1.5rem;
-            font-weight: 500;
-            font-size: 0.95rem;
-            text-transform: uppercase;
-            letter-spacing: 0.05em;
-        }
-
-        nav a:hover {
-            color: var(--accent-color);
-            border-bottom: 2px solid var(--accent-color);
-        }
-
-        section {
-            margin-bottom: 3rem;
-            scroll-margin-top: 2rem;
-        }
-
-        h2 {
-            font-size: 1.4rem;
-            font-weight: 600;
-            color: var(--accent-color);
-            margin-bottom: 1rem;
-            text-transform: uppercase;
-            letter-spacing: 0.03em;
-            border-bottom: 1px solid var(--border-color);
-            padding-bottom: 0.3rem;
-        }
-
-        p {
-            margin-bottom: 1.2rem;
-            text-align: justify;
-        }
-
-        .profile-grid {
-            display: grid;
-            grid-template-columns: 1fr;
-            gap: 2rem;
-            margin-bottom: 2rem;
-        }
-
-        @media (min-width: 600px) {
-            .profile-grid {
-                grid-template-columns: 2.5fr 1fr;
-            }
-        }
-
-        .contact-info {
-            background-color: var(--light-accent);
-            padding: 1.2rem;
-            border-left: 4px solid var(--accent-color);
-            font-size: 0.9rem;
-        }
-
-        .contact-info p {
-            margin-bottom: 0.5rem;
-            text-align: left;
-        }
-
-        .contact-info p:last-child {
-            margin-bottom: 0;
-        }
-
-        ul {
-            list-style-type: none;
-            margin-bottom: 1.5rem;
-        }
-
-        li {
-            margin-bottom: 0.8rem;
-            padding-left: 1rem;
-            position: relative;
-        }
-
-        li::before {
-            content: "•";
-            color: var(--accent-color);
-            position: absolute;
-            left: 0;
-            font-weight: bold;
-        }
-
-        .pub-title {
-            font-weight: 600;
-        }
-
-        .pub-journal {
-            font-style: italic;
-        }
-
-        .math-inline {
-            font-family: var(--math-font);
-        }
-
-        .math-block {
-            margin: 1.5rem 0;
-            padding: 1rem;
-            background: #fdfdfd;
-            border: 1px solid var(--border-color);
-            border-radius: 4px;
-            overflow-x: auto;
-        }
-
-        footer {
-            margin-top: 5rem;
-            padding-top: 1.5rem;
-            border-top: 1px solid var(--border-color);
-            font-size: 0.85rem;
-            color: #666666;
-            text-align: center;
-        }
-
-        a.external {
-            color: var(--accent-color);
-            text-decoration: none;
-        }
-
-        a.external:hover {
-            text-decoration: underline;
-        }
+        <link rel="stylesheet" href="styles.css">
     </style>
 </head>
 <body>
@@ -229,26 +56,12 @@
 
             <section id="research">
                 <h2>Research</h2>
-                <p> A continuous complex function $f$ can be applied entrywise to a diagonal matrix, 
-                    as in \[f\begin{pmatrix}a & 0 \\ 0 &b\end{pmatrix} = \begin{pmatrix}f(a) & 0\\0 & f(b)\end{pmatrix} \hspace{5mm}.\]  
-                    From this we extend $f$ to <i>almost every</i> matrix by defining \[f(U^*DU) = U^*f(D)U,\] where $U$ is any unitary matrix, $U^*$ its inverse, and $D$ diagonal. </p>
+                <p>My primary research is in operator theory, in particular the free functional calculus. 
+                I am particularly interested in its interplay with other fields, such as neural networks and logic. 
+                    My interests also include noncommutative real algebraic geometry, noncommutative algebra, and category theory. </p>
+                <p><a class="external" href="research.html">Read a more detailed discussion of my research </a></p>
+                
 
-<p>We can extend this to any complex matrix $A$ when $f = \sum_{n}a_nx^n$ is a complex analytic function. 
-Given an $m\times m$ Jordan block $J$  we evaluate 
-\[f(J) = f\begin{pmatrix}\lambda & 1&&\\&\ddots&\ddots&\\&&\lambda&1\\&&&\lambda\end{pmatrix}= \sum_na_nJ^n =\begin{pmatrix}f(\lambda) & f'(\lambda)&\hdots&\frac{f^{(m)}(\lambda)}{m!}\\&\ddots&\ddots&\vdots\\&&f(\lambda)&f'(\lambda)\\&&&f(\lambda)\end{pmatrix}.\]</p>
-
-<p>Because every matrix is similar to a direct sum of Jordan blocks, which we notate $A = S^{-1}J^\oplus S$, we extend $f$ to any matrix by \[f(A) = S^{-1}f(J^\oplus)S.\]</p>
-
-<p>Both of these can be extended to functions of a single <i>operator</i> variable, in the continuous case by polynomial approximation 
-                    and in the complex analytic case by adapting the Cauchy integral formula, giving for a bounded linear transformation $T$ the evaluation 
-\[f(T) = \frac{1}{2\pi i} \int_\gamma f(\zeta)(\zeta - T)^{-1}d\zeta.\] 
-                    All of this supposes that the spectrum of our matrices and operators are contained within the domain of $f.$ </p>
-
-<p>This approach to matrix and operator functional calculus can be extended to multivariate functions, but this requires the arguments of the function to commute. 
-                    Tuples of matrices typically do not commute; this is dealt with using the <i>free functional calculus</i>. 
-                    The archetypal free function is a noncommutative polynomial, which is written as \[f(x_1, \dots, x_d) = \sum_{i=0}^n c_iw_i(x_1, \dots, x_d)\] where $w_i(x_1, \dots, x_d)$ is a word in the $d$ noncommuting letters. 
-                    These are naturally evaluated on a $d$-tuple of square matrices $(A_1, \dots, A_d)$ by replacing each $x_i$ with $A_i$. 
-                    These can then be extended to continuous and analytic functions in the typical way. The free functional calculus gives a rich theory, wherein notably the non-commutative Jacobian conjecture holds [Pas14, Aug19]. </p>
             </section>
 
             <section id="publications">
