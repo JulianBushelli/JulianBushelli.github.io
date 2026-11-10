@@ -1,0 +1,174 @@
+:root {
+            --bg-color: #fcfcfc;
+            --text-color: #222222;
+            --accent-color: #1a446c;
+            --light-accent: #f0f4f8;
+            --border-color: #dddddd;
+            --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+            --math-font: "Times New Roman", Times, serif;
+        }
+
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: var(--font-family);
+            color: var(--text-color);
+            background-color: var(--bg-color);
+            line-height: 1.7;
+            padding: 2rem 1rem;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        header {
+            margin-bottom: 3rem;
+            border-bottom: 2px solid var(--accent-color);
+            padding-bottom: 1.5rem;
+        }
+
+        h1 {
+            font-size: 2.2rem;
+            font-weight: 500;
+            color: var(--accent-color);
+            margin-bottom: 0.5rem;
+        }
+
+        .title-sub {
+            font-size: 1.1rem;
+            color: #555555;
+            font-style: italic;
+        }
+
+        nav {
+            margin-top: 1.5rem;
+        }
+
+        nav a {
+            color: var(--text-color);
+            text-decoration: none;
+            margin-right: 1.5rem;
+            font-weight: 500;
+            font-size: 0.95rem;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        nav a:hover {
+            color: var(--accent-color);
+            border-bottom: 2px solid var(--accent-color);
+        }
+
+        section {
+            margin-bottom: 3rem;
+            scroll-margin-top: 2rem;
+        }
+
+        h2 {
+            font-size: 1.4rem;
+            font-weight: 600;
+            color: var(--accent-color);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.03em;
+            border-bottom: 1px solid var(--border-color);
+            padding-bottom: 0.3rem;
+        }
+
+        p {
+            margin-bottom: 1.2rem;
+            text-align: justify;
+        }
+
+        .profile-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        @media (min-width: 600px) {
+            .profile-grid {
+                grid-template-columns: 2.5fr 1fr;
+            }
+        }
+
+        .contact-info {
+            background-color: var(--light-accent);
+            padding: 1.2rem;
+            border-left: 4px solid var(--accent-color);
+            font-size: 0.9rem;
+        }
+
+        .contact-info p {
+            margin-bottom: 0.5rem;
+            text-align: left;
+        }
+
+        .contact-info p:last-child {
+            margin-bottom: 0;
+        }
+
+        ul {
+            list-style-type: none;
+            margin-bottom: 1.5rem;
+        }
+
+        li {
+            margin-bottom: 0.8rem;
+            padding-left: 1rem;
+            position: relative;
+        }
+
+        li::before {
+            content: "•";
+            color: var(--accent-color);
+            position: absolute;
+            left: 0;
+            font-weight: bold;
+        }
+
+        .pub-title {
+            font-weight: 600;
+        }
+
+        .pub-journal {
+            font-style: italic;
+        }
+
+        .math-inline {
+            font-family: var(--math-font);
+        }
+
+        .math-block {
+            margin: 1.5rem 0;
+            padding: 1rem;
+            background: #fdfdfd;
+            border: 1px solid var(--border-color);
+            border-radius: 4px;
+            overflow-x: auto;
+        }
+
+        footer {
+            margin-top: 5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--border-color);
+            font-size: 0.85rem;
+            color: #666666;
+            text-align: center;
+        }
+
+        a.external {
+            color: var(--accent-color);
+            text-decoration: none;
+        }
+
+        a.external:hover {
+            text-decoration: underline;
+        }
